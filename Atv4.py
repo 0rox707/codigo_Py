@@ -29,7 +29,8 @@ h = 0
 c=0
 print("media de |", end="")
 while True:
-    
+    if len(Lista) < 3:
+        print("Lista não possue valor em índices impar")
     if h%2 == 0:
         print(lista[h],end=" ")
         media+=lista[h]
